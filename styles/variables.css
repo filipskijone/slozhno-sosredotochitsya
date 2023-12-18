@@ -6,6 +6,12 @@
   --text-style: "IBM Plex Mono", sans-serif;
   --main-black-title: #000028;
   --bottom-accent-color: rgba(255, 0, 112, 0.4);
-  --background-color: #000028;
+  --bg-color: #000028;
   --hf-title-color: #db00ff;
+  --section-title-color: #ff0070;
+  --footer-shadow: #ff0070;
+}
+.page {
+  background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-color);
 }
