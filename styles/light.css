@@ -5,9 +5,12 @@
   --main-black-title: #353430;
   --section-title-color: #353430;
   --bottom-accent-color: #353430;
+  --bg-color: #fff1f7;
 }
 .page.theme_light {
   background-image: url(../images/cover-image-light.png);
+  --bg-color: #fff1f7;
+  background-color: var(--bg-color);
   --accent-color: #ffc2e6;
   --hf-title-color: #ffc2e6;
   --main-black-title: #353430;
@@ -34,5 +37,23 @@
   }
   .footer__borders-bot {
     --accent-color: #353430;
+  }
+  .card__text {
+    color: var(--main-black-title);
+  }
+}
+@media (prefers-color-schene: dark) {
+  :root {
+    --accent-color: #ff0070;
+    --shadow-color: #ff0070;
+    --main-text-color: #f1b2ce;
+    --big-title-color: #db00ff;
+    --text-style: "IBM Plex Mono", sans-serif;
+    --main-black-title: #000028;
+    --bottom-accent-color: rgba(255, 0, 112, 0.4);
+    --bg-color: #000028;
+    --hf-title-color: #db00ff;
+    --section-title-color: #ff0070;
+    --footer-shadow: #ff0070;
   }
 }

@@ -46,3 +46,35 @@
     --accent-color: #ff0070;
   }
 }
+@media (prefers-color-scheme: light) {
+  .page {
+    background-image: url(../images/cover-image-light.png);
+    --accent-color: #ffc2e6;
+    --hf-title-color: #ffc2e6;
+    --main-black-title: #353430;
+    --main-text-color: #353430;
+    --section-title-color: #353430;
+    --bottom-accent-color: #353430;
+    .header__theme-menu-button {
+      color: var(--main-black-title);
+    }
+    .top__borders {
+      --accent-color: #353430;
+    }
+    .bot__borders {
+      --accent-color: #353430;
+    }
+    .dec__text {
+      display: none;
+    }
+    .dec__tochka {
+      display: none;
+    }
+    .footer__borders-top {
+      --accent-color: #353430;
+    }
+    .footer__borders-bot {
+      --accent-color: #353430;
+    }
+  }
+}
