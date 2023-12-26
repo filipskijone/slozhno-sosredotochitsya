@@ -27,7 +27,7 @@
   color: var(--hf-title-color);
   text-shadow: 4px 4px 0px var(--shadow-color);
   margin-left: -18px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 .header__description {
   grid-column-start: 3;
@@ -36,7 +36,7 @@
   color: var(--card-title-color);
   max-width: 491px;
   align-self: center;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
 }
 .header__text {
   color: #000028;
@@ -168,6 +168,7 @@
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 4;
+  margin-bottom: 5px;
 }
 .card-list__second-block {
   display: grid;
@@ -179,10 +180,11 @@
 .section__second {
   font-family: var(--text-style);
   height: auto;
+  padding-bottom: 88px;
 }
 .section__third {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 315px 2fr;
   font-family: var(--text-style);
   gap: 20px;
   font-size: clamp(1.09375rem, -3.6875rem + 10vw, 1.125rem);
@@ -195,6 +197,18 @@
   line-height: 23.4px;
   margin: 20px 0 10px;
 }
+.sky__card {
+  padding-bottom: 5px;
+}
+.music__card {
+  padding-bottom: 3px;
+}
+.walking__card {
+  padding-bottom: 4px;
+}
+.eat__card {
+  padding-bottom: 3px;
+}
 .section__gallery {
   margin: 0 20px 60px;
   height: 1117px;
@@ -204,8 +218,8 @@
   margin-top: 20px;
   display: grid;
   gap: 19.76px;
-  grid-template-columns: calc(32%) calc(32%) calc(32%);
-  grid-template-rows: calc(23%) calc(27.8%) calc(38%);
+  grid-template-columns: calc(32%) calc(32.2%) calc(32.5%);
+  grid-template-rows: calc(22.5%) calc(27.2%) calc(37.5%);
   overflow: hidden;
 }
 .sunset {
@@ -325,13 +339,13 @@
     grid-column-end: 5;
     font-size: clamp(7.4375rem, -2.125rem + 20vw, 7.5rem);
     margin-left: -20px;
-    margin-top: 25px;
+    margin-top: 30px;
   }
   .header__description {
     margin-bottom: 72px;
   }
   .header__text {
-    font-size: clamp(1.09375rem, -3.6875rem + 11vw, 1.125rem);
+    font-size: clamp(1.09375rem, -1.875rem + 6.25vw, 1.125rem);
   }
   .header__theme-menu {
     width: 70px;
@@ -357,11 +371,24 @@
     grid-template-columns: 236px 1fr 1fr;
     grid-template-rows: 314px 314px;
   }
+  .section__second {
+    padding-top: 4px;
+    padding-bottom: 80px;
+  }
+  .section__third {
+    grid-template-columns: 236px 2fr;
+    padding-bottom: 85px;
+  }
   .card__text {
     line-height: 23px;
+    font-size: clamp(1.09375rem, -1.875rem + 6.25vw, 1.125rem);
   }
   .section__title {
     max-width: 225px;
+    font-size: clamp(1.09375rem, -1.875rem + 6.25vw, 1.125rem);
+  }
+  .tips__card {
+    margin-top: 21.5px;
   }
   .golden__fish {
     font-size: clamp(1.09375rem, -3.6875rem + 10vw, 1.125rem);
@@ -388,7 +415,7 @@
   .gallery {
     max-width: calc(100vw);
     grid-template-columns: calc(31.5%) calc(31.5%) calc(31.5%);
-    grid-template-rows: calc(25vw) calc(19.8%) calc(27.3%);
+    grid-template-rows: calc(25vw) calc(20%) calc(27.5%);
   }
   .tape_pic {
     left: -135.5%;
@@ -404,6 +431,9 @@
   .footer {
     height: 1024px;
   }
+  .footer__title {
+    padding-top: 12px;
+  }
 }
 @media (max-width: 375px) {
   .page {
@@ -418,9 +448,11 @@
     margin-bottom: 0;
     height: 668px;
     grid-template-rows: none;
+    padding-bottom: 15px;
   }
   .header__theme-menu {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    margin-top: 44px;
   }
   .header__theme-menu-button {
     font-size: clamp(1.09375rem, 1.25rem + -0.8333vw, 1.15625rem);
@@ -429,10 +461,15 @@
     margin-left: 0;
     font-size: clamp(7.1875rem, -16.1875rem + 100vw, 7.25rem);
     line-height: 82.5%;
+    margin-top: 60px;
   }
   .header__description {
     grid-column-start: 1;
-    margin-bottom: -23px;
+    margin-bottom: 0;
+    margin-top: 35px;
+  }
+  .bot__borders {
+    align-self: self-end;
   }
   .header__text {
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
@@ -459,11 +496,13 @@
     grid-row-start: 2;
     grid-row-end: 3;
     height: auto;
+    padding-top: 5px;
   }
   .dofamin {
     grid-column-start: 1;
     grid-row-start: 3;
     margin-top: 4px;
+    margin-bottom: 3px;
   }
   .section__second {
     padding: 47px 10px 10px;
@@ -476,12 +515,14 @@
   }
   .food__card {
     height: 314px;
+    margin-top: 2px;
   }
   .gadgets__card {
     height: 384px;
+    margin-top: 3px;
   }
   .section__third {
-    padding: 40px 10px 10px;
+    padding: 45px 10px 10px;
     display: block;
   }
   .golden__fish {
@@ -529,13 +570,16 @@
     grid-row-start: 7;
     grid-row-end: 8;
     height: 23px;
+    margin-top: 23px;
   }
   .eat__card {
     margin-top: 20px;
     grid-row-start: 8;
     grid-row-end: 9;
+    margin-bottom: 3px;
   }
   .read__title {
+    margin-top: 22px;
     height: 23px;
     grid-row-start: 9;
     grid-row-end: 10;
@@ -547,7 +591,7 @@
   }
   .section__gallery {
     margin: 0;
-    padding: 50px 10px 0;
+    padding: 55px 10px 0;
     height: 1420px;
     margin-bottom: 0;
   }
@@ -561,7 +605,7 @@
     max-height: none;
   }
   .sunset {
-    height: 155px;
+    height: 160px;
   }
   .sunset_pic {
     height: 100%;
@@ -569,7 +613,7 @@
   }
   .ice-cream {
     left: 0;
-    height: 391px;
+    height: 405px;
   }
   .ice-cream_pic {
     width: 100%;
@@ -577,7 +621,7 @@
     left: 0;
   }
   .tape {
-    height: 265px;
+    height: 270px;
   }
   .tape_pic {
     width: 100%;
@@ -585,21 +629,21 @@
     left: 0;
   }
   .books {
-    height: 400px;
+    height: 405px;
   }
   .books_pic {
     width: 100%;
     height: 100%;
   }
   .street {
-    height: 237px;
+    height: 276px;
   }
   .street_pic {
     width: 100%;
     height: 100%;
   }
   .footer {
-    margin-top: 40px;
+    margin-top: 45px;
     padding: 10px;
     width: 375px;
     height: 667px;
@@ -617,7 +661,7 @@
     grid-row-end: 6;
   }
   .footer__title {
-    margin-top: 25px;
+    margin-top: 18px;
     justify-content: center;
     align-items: center;
     font-size: clamp(7.1875rem, -16.1875rem + 100vw, 7.25rem);
@@ -626,7 +670,7 @@
 @media (prefers-color-scheme: light) {
   .page {
     background-image: url(../images/cover-image-light.png);
-    --accent-color: #ffc2e6;
+    --accent-color: #ff0070;
     --hf-title-color: #ffc2e6;
     --main-black-title: #353430;
     --main-text-color: #353430;
