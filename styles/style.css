@@ -168,7 +168,6 @@
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 4;
-  margin-bottom: 5px;
 }
 .card-list__second-block {
   display: grid;
@@ -180,7 +179,7 @@
 .section__second {
   font-family: var(--text-style);
   height: auto;
-  padding-bottom: 88px;
+  padding-bottom: 80px;
 }
 .section__third {
   display: grid;
@@ -290,7 +289,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .footer__title {
   justify-self: center;
@@ -516,8 +515,7 @@
   .dofamin {
     grid-column-start: 1;
     grid-row-start: 3;
-    margin-top: 2px;
-    margin-bottom: 3px;
+    margin-bottom: 0;
   }
   .section__second {
     padding: 45px 10px 10px;
