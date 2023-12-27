@@ -421,6 +421,7 @@
   }
   .ice-cream_pic {
     height: 100%;
+    left: calc(-46%);
   }
   .gallery {
     max-width: calc(100vw);
@@ -434,9 +435,6 @@
     width: 100%;
     height: 100%;
     margin-top: 0;
-  }
-  .ice-cream_pic {
-    left: calc(-46%);
   }
   .footer {
     height: 1024px;
@@ -486,14 +484,12 @@
   .header__text {
     font-size: clamp(1.1125rem, 0.1875rem + 4vw, 1.125rem);
   }
-  .section__title {
-    font-size: clamp(1.1125rem, 0.1875rem + 4vw, 1.125rem);
-  }
   .section__first {
     grid-template-rows: 47px 1fr 1fr;
     padding: 40px 10px 10px;
   }
   .section__title {
+    font-size: clamp(1.1125rem, 0.1875rem + 4vw, 1.125rem);
     grid-column-start: 1;
     grid-column-end: 4;
     height: 47px;
@@ -656,7 +652,7 @@
   }
   .street_pic {
     width: 354.999px;
-  height: 237px;
+    height: 237px;
   }
   .footer {
     margin-top: 25px;
@@ -688,9 +684,9 @@
 @media (prefers-color-scheme: light) {
   .page {
     background-image: url(../images/cover-image-light.png);
-    --accent-color: #FF8DCB;
-    --shadow-color: #FF8DCB;
-    --footer-shadow: #FF8DCB;
+    --accent-color: #ff8dcb;
+    --shadow-color: #ff8dcb;
+    --footer-shadow: #ff8dcb;
     --hf-title-color: #ffc2e6;
     --main-black-title: #353430;
     --main-text-color: #353430;
