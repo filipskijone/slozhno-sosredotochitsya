@@ -26,8 +26,8 @@
   font-weight: 700;
   color: var(--hf-title-color);
   text-shadow: 4px 4px 0px var(--shadow-color);
-  margin-left: -18px;
-  margin-top: 25px;
+  margin-left: -20px;
+  margin-top: 27px;
 }
 .header__description {
   grid-column-start: 3;
@@ -36,12 +36,12 @@
   color: var(--card-title-color);
   max-width: 491px;
   align-self: center;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 .header__text {
   color: #000028;
   font-family: var(--text-style);
-  font-size: clamp(1.09375rem, 0.4293rem + 1.087vw, 1.125rem);
+  font-size: clamp(1.1125rem, 0.5917rem + 0.8333vw, 1.125rem);
   font-weight: 700;
   line-height: 23.4px;
 }
@@ -136,7 +136,7 @@
 .section__title {
   color: var(--section-title-color);
   font-weight: 700;
-  font-size: 18px;
+  font-size: clamp(1.1125rem, 0.5917rem + 0.8333vw, 1.125rem);
   line-height: 23.4px;
 }
 .second-section__title {
@@ -146,15 +146,15 @@
   background-color: var(--accent-color);
   color: var(--main-black-title);
   margin-bottom: 10px;
-  font-size: clamp(1.0625rem, 0.9903rem + 0.3092vw, 1.1875rem);
+  font-size: clamp(1.1125rem, 0.5917rem + 0.8333vw, 1.125rem);
   font-weight: 700;
-  line-height: 23.4px;
+  line-height: 23px;
 }
 .card__text {
   color: var(--main-text-color);
   font-weight: 400;
-  font-size: clamp(1.09375rem, 0.4293rem + 1.087vw, 1.125rem);
-  line-height: 23.4px;
+  font-size: clamp(1.1125rem, 0.5917rem + 0.8333vw, 1.125rem);
+  line-height: 130%;
 }
 .mnogozadachnost {
   height: auto;
@@ -209,8 +209,11 @@
 .eat__card {
   padding-bottom: 3px;
 }
+.read__card {
+  margin-bottom: 3px;
+}
 .section__gallery {
-  margin: 0 20px 60px;
+  margin: 0 20px 20px;
   height: 1117px;
 }
 .gallery {
@@ -219,7 +222,7 @@
   display: grid;
   gap: 19.76px;
   grid-template-columns: calc(32%) calc(32.2%) calc(32.5%);
-  grid-template-rows: calc(22.5%) calc(27.2%) calc(37.5%);
+  grid-template-rows: calc(22.5%) calc(27%) calc(37.5%);
   overflow: hidden;
 }
 .sunset {
@@ -287,6 +290,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 40px;
 }
 .footer__title {
   justify-self: center;
@@ -372,12 +376,11 @@
     grid-template-rows: 314px 314px;
   }
   .section__second {
-    padding-top: 4px;
     padding-bottom: 80px;
   }
   .section__third {
     grid-template-columns: 236px 2fr;
-    padding-bottom: 85px;
+    padding-bottom: 80px;
   }
   .card__text {
     line-height: 23px;
@@ -395,12 +398,20 @@
   }
   .sky__card {
     height: 280.108px;
+    padding-bottom: 0;
+    margin-bottom: -1px;
   }
   .music__card {
     height: 164px;
+    margin-bottom: -1px;
   }
   .walking__card {
     height: 257.113px;
+    margin-bottom: -1px;
+  }
+  .eat__card {
+    padding: 0;
+    margin-bottom: 2px;
   }
   .food__card {
     height: 257.113px;
@@ -415,7 +426,7 @@
   .gallery {
     max-width: calc(100vw);
     grid-template-columns: calc(31.5%) calc(31.5%) calc(31.5%);
-    grid-template-rows: calc(25vw) calc(20%) calc(27.5%);
+    grid-template-rows: calc(25vw) calc(19.8%) calc(27.2%);
   }
   .tape_pic {
     left: -135.5%;
@@ -425,14 +436,15 @@
     height: 100%;
     margin-top: 0;
   }
-  .ice-cream {
-    left: calc(-13%);
+  .ice-cream_pic {
+    left: calc(-46%);
   }
   .footer {
     height: 1024px;
+    margin-top: 60px;
   }
   .footer__title {
-    padding-top: 12px;
+    padding-top: 2px;
   }
 }
 @media (max-width: 375px) {
@@ -461,18 +473,22 @@
     margin-left: 0;
     font-size: clamp(7.1875rem, -16.1875rem + 100vw, 7.25rem);
     line-height: 82.5%;
-    margin-top: 60px;
+    margin-top: 57px;
   }
   .header__description {
     grid-column-start: 1;
     margin-bottom: 0;
-    margin-top: 35px;
+    margin-top: 38px;
   }
   .bot__borders {
     align-self: self-end;
+    margin-bottom: -5px;
   }
   .header__text {
-    font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+    font-size: clamp(1.1125rem, 0.1875rem + 4vw, 1.125rem);
+  }
+  .section__title {
+    font-size: clamp(1.1125rem, 0.1875rem + 4vw, 1.125rem);
   }
   .section__first {
     grid-template-rows: 47px 1fr 1fr;
@@ -482,13 +498,13 @@
     grid-column-start: 1;
     grid-column-end: 4;
     height: 47px;
-    max-width: 330px;
+    max-width: max-content;
   }
   .card__title {
-    font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+    font-size: clamp(1.1125rem, 0.1875rem + 4vw, 1.125rem);
   }
   .card__text {
-    font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+    font-size: clamp(1.1125rem, 0.1875rem + 4vw, 1.125rem);
     line-height: 23.3px;
   }
   .mnogozadachnost {
@@ -496,16 +512,15 @@
     grid-row-start: 2;
     grid-row-end: 3;
     height: auto;
-    padding-top: 5px;
   }
   .dofamin {
     grid-column-start: 1;
     grid-row-start: 3;
-    margin-top: 4px;
+    margin-top: 2px;
     margin-bottom: 3px;
   }
   .section__second {
-    padding: 47px 10px 10px;
+    padding: 45px 10px 10px;
   }
   .card-list__second-block {
     grid-template-rows: 314px 314px 384px;
@@ -515,14 +530,12 @@
   }
   .food__card {
     height: 314px;
-    margin-top: 2px;
   }
   .gadgets__card {
     height: 384px;
-    margin-top: 3px;
   }
   .section__third {
-    padding: 45px 10px 10px;
+    padding: 40px 10px 10px;
     display: block;
   }
   .golden__fish {
@@ -547,9 +560,10 @@
     margin-top: 10px;
   }
   .music__title {
-    height: 23px;
+    height: 22px;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin-top: 21px;
   }
   .music__card {
     margin-top: 20px;
@@ -570,7 +584,7 @@
     grid-row-start: 7;
     grid-row-end: 8;
     height: 23px;
-    margin-top: 23px;
+    margin-top: 22px;
   }
   .eat__card {
     margin-top: 20px;
@@ -591,8 +605,8 @@
   }
   .section__gallery {
     margin: 0;
-    padding: 55px 10px 0;
-    height: 1420px;
+    padding: 52px 10px 0;
+    height: 1470px;
     margin-bottom: 0;
   }
   .gallery {
@@ -600,28 +614,30 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 1336px;
+    height: 1368px;
     max-width: none;
-    max-height: none;
   }
   .sunset {
-    height: 160px;
+    height: 142px;
+    overflow: visible;
   }
   .sunset_pic {
-    height: 100%;
-    width: 100%;
+    width: 354.999px;
+    height: auto;
   }
   .ice-cream {
+    overflow: visible;
     left: 0;
-    height: 405px;
+    height: 355px;
   }
   .ice-cream_pic {
     width: 100%;
-    height: 100%;
+    height: 356px;
     left: 0;
   }
   .tape {
-    height: 270px;
+    overflow: visible;
+    height: 238px;
   }
   .tape_pic {
     width: 100%;
@@ -629,21 +645,23 @@
     left: 0;
   }
   .books {
-    height: 405px;
+    overflow: visible;
+    height: 355px;
   }
   .books_pic {
     width: 100%;
     height: 100%;
   }
   .street {
-    height: 276px;
+    overflow: visible;
+    height: 300px;
   }
   .street_pic {
-    width: 100%;
-    height: 100%;
+    width: 354.999px;
+  height: 237px;
   }
   .footer {
-    margin-top: 45px;
+    margin-top: 25px;
     padding: 10px;
     width: 375px;
     height: 667px;
@@ -652,6 +670,7 @@
     grid-template-columns: 1fr;
   }
   .footer__borders-top {
+    margin-top: -2px;
     justify-self: end;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -661,7 +680,8 @@
     grid-row-end: 6;
   }
   .footer__title {
-    margin-top: 18px;
+    padding-top: 23px;
+    margin-top: 0;
     justify-content: center;
     align-items: center;
     font-size: clamp(7.1875rem, -16.1875rem + 100vw, 7.25rem);
@@ -670,7 +690,9 @@
 @media (prefers-color-scheme: light) {
   .page {
     background-image: url(../images/cover-image-light.png);
-    --accent-color: #ff0070;
+    --accent-color: #FF8DCB;
+    --shadow-color: #FF8DCB;
+    --footer-shadow: #FF8DCB;
     --hf-title-color: #ffc2e6;
     --main-black-title: #353430;
     --main-text-color: #353430;

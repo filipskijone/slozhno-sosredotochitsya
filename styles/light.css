@@ -1,6 +1,6 @@
 :root.theme_light {
   --accent-color: #ffc2e6;
-  --shadow-color: #ff0070;
+  --shadow-color: #FF8DCB;
   --hf-title-color: #ffc2e6;
   --main-black-title: #353430;
   --section-title-color: #353430;
@@ -11,7 +11,9 @@
   background-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   background-color: var(--bg-color);
-  --accent-color: #ff0070;
+  --shadow-color: #FF8DCB;
+  --footer-shadow: #FF8DCB;
+  --accent-color: #FF8DCB;
   --hf-title-color: #ffc2e6;
   --main-black-title: #353430;
   --main-text-color: #353430;
