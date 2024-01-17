@@ -210,6 +210,7 @@
 .gallery_pic {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .sunset {
   grid-row-start: 1;
