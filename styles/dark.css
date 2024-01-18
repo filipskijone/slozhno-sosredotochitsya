@@ -4,25 +4,23 @@
   --shadow-color: #ff0070;
   --main-text-color: #f1b2ce;
   --big-title-color: #db00ff;
-  --main-black-title: #000028;
+  --title-decor_color: #000028;
   --bottom-accent-color: rgba(255, 0, 112, 0.4);
   --bg-color: #000028;
   --hf-title-color: #db00ff;
   --section-title-color: #ff0070;
   --footer-shadow: #ff0070;
+  --rec-color: #ff0070;
 }
-@media (prefers-color-schene: dark) {
-  :root {
+:root {
     --accent-color: #ff0070;
     --shadow-color: #ff0070;
     --main-text-color: #f1b2ce;
     --big-title-color: #db00ff;
-    --text-style: "IBM Plex Mono", sans-serif;
-    --main-black-title: #000028;
+    --title-decor_color: #000028;
     --bottom-accent-color: rgba(255, 0, 112, 0.4);
     --bg-color: #000028;
     --hf-title-color: #db00ff;
     --section-title-color: #ff0070;
     --footer-shadow: #ff0070;
   }
-}

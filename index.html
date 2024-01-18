@@ -45,21 +45,21 @@
         </ul>
       </nav>
       <h1 class="header_title">no focus</h1>
-      <div class="title-decor">
+      <div class="title-decor header_desc">
         <p class="header__text">
           Что делать, когда не можешь делать ничего <br />
           Или почему нам так сложно сконцентрироваться, особенно когда очень
           надо
         </p>
       </div>
-      <section>
+      <div class="rec" aria-hidden="true">
         <p class="rec_text">rec</p>
-      </section>
+      </div>
     </header>
     <main class="main">
       <section class="why section">
         <h2 class="section__title">Почему сосредоточиться так сложно</h2>
-        <div class="why_card-1">
+        <article class="why_card">
           <h3 class="title-decor">Многозадачность</h3>
           <p class="card__text">
             Особенно сложно сосредоточиться, когда задач много и все они —
@@ -76,8 +76,8 @@
             стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
             устаём.
           </p>
-        </div>
-        <div class="why_card-2">
+        </article>
+        <article class="why_card dofamin">
           <h3 class="title-decor">Дофамин</h3>
           <p class="card__text">
             С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей
@@ -89,14 +89,14 @@
             удовольствие. Получается замкнутый круг: чем больше отвлекаешься,
             тем больше удовольствия получаешь.
           </p>
-        </div>
+        </article>
       </section>
       <section class="what section">
         <h2 class="section__title second-section__title">
           Что снижает концентрацию внимания?
         </h2>
         <div class="what_card-list">
-          <div class="card zadachi__card">
+          <div class="card">
             <h3 class="title-decor">Многозадачность</h3>
             <p class="card__text">
               Как концентрация может снижаться из-за… концентрации? Любая
@@ -143,8 +143,8 @@
           </h3>
           <div class="card-list__third">
             <article class="how__card">
-              <h4 class="how__title">Представьте небо и облака</h4>
-              <p class="card__text sky__card">
+              <h4 class="title-decor how_title">Представьте небо и облака</h4>
+              <p class="card__text">
                 Или листья в ручье. Тут дело в лёгкой медитации, которая
                 помогает успокоиться. Ведь часто именно тревожные мысли о
                 сложных задачах как раз и мешают эти сложные задачи делать. В
@@ -156,8 +156,8 @@
               </p>
             </article>
             <article class="how__card">
-              <h4 class="how__title">Включите музыку</h4>
-              <p class="card__text music__card">
+              <h4 class="title-decor how_title">Включите музыку</h4>
+              <p class="card__text">
                 Но не любую, и не любимую. Любимая может быть связана с сильными
                 положительными эмоциями, которые тоже очень сильно отвлекают.
                 Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
@@ -165,8 +165,8 @@
               </p>
             </article>
             <article class="how__card">
-              <h4 class="how__title">Прогуляйтесь</h4>
-              <p class="card__text walking__card">
+              <h4 class="title-decor how_title">Прогуляйтесь</h4>
+              <p class="card__text">
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
                 <a
                   class="link__style"
@@ -181,7 +181,7 @@
               </p>
             </article>
             <article class="how__card">
-              <h4 class="how__title">Хорошо ешьте</h4>
+              <h4 class="title-decor how_title">Хорошо ешьте</h4>
               <p class="card__text">
                 Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
                 которые препятствуют резким скачкам сахара в крови. Например, с
@@ -191,7 +191,7 @@
               </p>
             </article>
             <article class="how__card">
-              <h4 class="how__title">Читайте</h4>
+              <h4 class="title-decor how_title">Читайте</h4>
               <p class="card__text">
                 Настоящие бумажные книги. Это правда помогает с концентрацией:
                 чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -203,31 +203,39 @@
         </div>
       </section>
       <section class="section__gallery">
-        <h2 class="title-decor">А можно в картинках?</h2>
+        <h2 class="title-decor gallery_title">А можно в картинках?</h2>
         <ul class="gallery">
-          <li class="sunset">
-            <img src="./images/sunset.png" class="gallery_pic" alt="закат" />
+          <li class="pic_gal">
+            <img src="./images/sunset.png" 
+            class="gallery_pic" 
+            alt="закат" />
           </li>
-          <li class="ice-cream">
+          <li class="pic_gal">
             <img
               src="./images/ice-cream.png"
               class="gallery_pic"
               alt="мороженное"
             />
           </li>
-          <li class="tape">
-            <img src="./images/tape.png" class="gallery_pic" alt="лента" />
+          <li class="pic_gal">
+            <img src="./images/tape.png" 
+            class="gallery_pic" 
+            alt="лента" />
           </li>
-          <li class="books">
-            <img src="./images/books.png" class="gallery_pic" alt="книги" />
+          <li class="pic_gal">
+            <img src="./images/books.png" 
+            class="gallery_pic" 
+            alt="книги" />
           </li>
-          <li class="street">
-            <img src="./images/street.png" class="gallery_pic" alt="улица" />
+          <li class="pic_gal">
+            <img src="./images/street.png" 
+            class="gallery_pic" 
+            alt="улица" />
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer decorated-zone">
+    <footer class="footer decorated-zone_footer">
       <h2 class="footer__title">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
