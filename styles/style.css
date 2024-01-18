@@ -76,6 +76,8 @@
   background-color: var(--accent-color);
   color: var(--title-decor_color);
   margin-bottom: 10px;
+  line-height: 130%;
+  font-size: clamp(1.09375rem, -1.875rem + 6.25vw, 1.125rem);
 }
 .header_desc {
   grid-column-start: 3;
@@ -212,13 +214,13 @@
   width: 100%;
   object-fit: cover;
 }
-.pic_gal:nth-child(1)  {
+.pic_gal:nth-child(1) {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.pic_gal:nth-child(2)  {
+.pic_gal:nth-child(2) {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -305,7 +307,8 @@
 .link__style:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
-a, button {
+a,
+button {
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -340,7 +343,7 @@ a, button {
     grid-template-columns: 236px 1fr 1fr;
   }
   .how {
-    grid-template-columns: 226px 2fr;
+    grid-template-columns: 236px 2fr;
   }
   .card__text {
     line-height: 130%;
@@ -433,8 +436,11 @@ a, button {
     max-width: max-content;
     justify-self: start;
   }
-  .why_card {
-    margin: 20px 0;
+  .mnogo_title {
+    margin-top: 20px;
+  }
+  .dofamin_title {
+    margin-top: 20px;
   }
   .how {
     display: inline-block;
